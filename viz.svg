@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="586.0" viewBox="0 0 760 586.0" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="584.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Cheapest Flights with K Stops — Bellman-Ford, rounds = stops</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Cheapest 0 → 2 with at most k=1 stop: direct costs 500; via 1 costs 200 but uses one</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">stop. Dijkstra greedily settles nodes and can lock in a path that's cheap but too</text>
+<text x="56.0" y="117.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">LONG in hops.</text>
+<line x1="178.0" y1="211.5" x2="358.8" y2="160.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="269.4" y="179.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">100</text>
+<line x1="399.2" y1="159.5" x2="580.0" y2="211.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="490.6" y="179.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">100</text>
+<line x1="178.8" y1="217.0" x2="579.2" y2="217.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="380.0" y="211.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">500</text>
+<circle cx="158.8" cy="217.0" r="18" fill="#dbeafe" stroke="#2563eb" stroke-width="1.4"/>
+<text x="158.8" y="222.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">0</text>
+<circle cx="380.0" cy="154.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="380.0" y="159.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">1</text>
+<circle cx="601.2" cy="217.0" r="18" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+<text x="601.2" y="222.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">2</text>
+<line x1="24.0" y1="265.0" x2="736.0" y2="265.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="285.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="289.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="290.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Bellman-Ford capped at k+1 relaxation ROUNDS: each round extends paths by one edge.</text>
+<text x="56.0" y="309.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Crucially, relax from a SNAPSHOT of the previous round — in-place updates would let</text>
+<text x="56.0" y="328.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">one round chain multiple edges.</text>
+<text x="24.0" y="352.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="600">rounds</text>
+<text x="47.0" y="368.0" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#64748b" text-anchor="middle">round</text>
+<text x="93.0" y="368.0" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#64748b" text-anchor="middle">dist from 0</text>
+<rect x="24.0" y="374.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="46.0" y="394.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">1</text>
+<rect x="70.0" y="374.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="92.0" y="394.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">[0, 100, 500]</text>
+<rect x="24.0" y="406.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="46.0" y="426.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">2</text>
+<rect x="70.0" y="406.0" width="44.0" height="30.0" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="92.0" y="426.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">[0, 100, 200]</text>
+<line x1="24.0" y1="452.0" x2="736.0" y2="452.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="472.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="476.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="477.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">With k=1 (two rounds): 200. With k=0 (one round): 500 — and in the chain fixture,</text>
+<text x="56.0" y="496.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">unreachable → -1. The round cap IS the stop constraint; that's the whole adaptation.</text>
+<text x="72.0" y="531.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">answers</text>
+<rect x="84.0" y="512.0" width="99.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="133.5" y="531.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">k=1 → 200</text>
+<rect x="193.0" y="512.0" width="99.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="242.5" y="531.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">k=0 → 500</text>
+<text x="380.0" y="568.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
